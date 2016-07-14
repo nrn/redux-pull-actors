@@ -1,0 +1,19 @@
+{
+  "name": "redux-pull-actors",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Niemeir <nick.niemeir@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "pull-notify": "^0.1.1",
+    "pull-stream": "^3.4.3",
+    "universal-reduce": "^3.1.0"
+  },
+  "devDependencies": {
+    "tape": "^4.6.0"
+  }
+}
