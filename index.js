@@ -10,7 +10,6 @@ function actorMiddleware (actors) {
     reduce(actors, function (_, stream, n) {
       var source = pull(publish.listen(), stream(store))
       if (source) {
-        console.log('here ', n)
         pull(source, pull.drain(function (action) {
           if (action != null) store.dispatch(action)
         }))
