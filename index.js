@@ -20,7 +20,7 @@ function actorMiddleware (actors) {
         var before = store.getState()
         var res = next(action)
         var state = store.getState()
-        publish({ action, before, state })
+        publish({ action: action, before: before, state: state })
         return res
       }
     }
